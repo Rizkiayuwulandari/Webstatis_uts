@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RIZAYUU ARTLIBRARY ♡</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <script>
+    function animation(span) {
+     span.className = "turn";
+     setTimeout(function () {
+        span.className = ""
+     }, 700);
+  }
+  
+  function jam() {
+     setInterval(function () {
+  
+        var waktu = new Date();
+        var jam   = document.getElementById('jam');
+        var hours = waktu.getHours();
+        var minutes = waktu.getMinutes();
+        var seconds = waktu.getSeconds();
+  
+        if (waktu.getHours() < 10)
+        {
+           hours = '0' + waktu.getHours();
+        }
+        if (waktu.getMinutes() < 10)
+        {
+           minutes = '0' + waktu.getMinutes();
+        }
+        if (waktu.getSeconds() < 10)
+        {
+           seconds = '0' + waktu.getSeconds();
+        }
+        jam.innerHTML  = '<span>' + hours + '</span>'
+                       + '<span>' + minutes + '</span>'
+                       + '<span>' + seconds +'</span>';
+  
+        var spans      = jam.getElementsByTagName('span');
+        animation(spans[2]);
+        if (seconds == 0) animation(spans[1]);
+        if (minutes == 0 && seconds == 0) animation(spans[0]);
+  
+     }, 1000);
+  }
+  
+  jam();
+  
+      </script>
+
+  <body>
+	<div class="navmenu">
+    <div class="logo">
+      <button class="openbtn" onclick="openNav()"> ☰ </button>
+      
+      <nav><img src="logo.jpeg" alt="logo">
+      <a>RIZAYUU</a>
+    </nav>
+    </div>
+		<a href="index.html">Home</a>
+    <a href="about.html">About</a>
+		<a href="galery.html">Gallery</a>
+    <a href="Profile.html">Profile</a>
+		<div class="dropdown">
+      <button class="dropbtn">Contact Us</a></button>
+    <div class="dropdown-content">
+      <a href="https://instagram.com/wlndrizzkay_?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+      <a href="mailto:Rizzayyu30@gmail.com">Email</a>
+    </div>
+  </div>
+  </div>
+
+  <div id="mySidebar" class="sidebar">
+      <div class="jam-digital">
+      <h2>Widget Jam</h2>
+      <button class="closebtn" onclick="closeNav()">x</button>
+      <div id="jam"></div>
+  <hr  align="left" width="80%" color="black"/>
+  <h2>Statcounter</h2>
+  <!-- Statcounter code for Rizayuu ARTLibrary https://catatanartlibrary.blogspot.com/ on Blogger -->
+<script type="text/javascript">
+  //<![CDATA[
+  var sc_project=12926857; 
+  var sc_invisible=0; 
+  var sc_security="23afc923"; 
+  var scJsHost = "https://";
+  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter_xhtml.js'></"+"script>");
+  //]]>
+  </script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy - Statcounter" href="https://statcounter.com/" class="statcounter"><img class="statcounter" src="https://c.statcounter.com/12926857/0/23afc923/0/" alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade" /></a></div></noscript>
+  <!-- End of Statcounter Code -->
+  <a href="https://statcounter.com/p12926857/?guest=1"> View My Stats</a>
+    </div>
+
+    
+      </div>
+
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "200px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+
+    <main class="content">
+      <div class="container">
+        <div id="main">
+          
+        <h1>Profile Rizayuu
+          
+        </h1>
+        <div class="image">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbXR11KLx4yDgffLkR_GCfLOjcoVYEAA_QReC1QBU6JvVLuLPXUAgDfX_nPdBiq_B4_Vwt6Lo51xyLvsnKPftZzDK0QSGwEGC_omUL5-CogcYZalKaaJToVOZVHuUenFrlQuWenwZmrk4ulZUyiWMXqLlDO7gX2CcurO597rfkB93wNplgNclBXo8HAQ/s320/FOTO%20BLOG.jpg" alt="img" />
+        </div>
+        <hr />
+        <h2>Hallo,</h2>
+        <p> Perkenalkan nama asli saya Rizki Ayu Wulandari, biasa dipanggil Rizka, Ayu, dan juga ada yang panggil Darizka. 
+          Saya lahir di Ngawi, 30 Agustus 2002 dan besar hingga sekarang di kota dengan tingkat polusi cukup tinggi yaitu Tangerang Selatan. 
+          Sampai melanjutkan pendidikan di tingkat perkuliahan pun juga tidak jauh-jauh dari Tangerang Selatan tercinta. 
+          Saya memiliki hobi yang sangat terkait dengan seni yaitu Seni Tari, Lukis dan juga Menggambar. selain itu saya juga hobi sekali visit-visit ketempat-tempat seperti museum dan perpustakaan sedari saya SD. 
+          Saya mengikuti kelas tari ketika saya masih berumur 5 tahun dan di umur tersebut saya sudah mulai ikut banyak perlombaan tari di macam-macam anjungan di taman mini dari tingkat paud, dan hingga saya SMA pun saya masih sering mengikuti lomba-lomba hingga tingkat nasional dan internasional. 
+          nah dari situlah hobi dan ketertarikan saya dengan seni mulai timbul.
+        </p>
+        <p>   Selanjutnya membahas mengenai pendidikan, sejak Paud hingga kuliah sekarang Alhamdulillah saya selalu mendapat negeri. 
+          Sedari kecil orang tua saya selalu memotivasi saya agar semangat menempuh pendidikan hingga mendapatkan nilai terbaik dan sekolah terbaik agar kedua orang tua saya bangga dan saya sendiripun merasa puas dan tidak perlu susah payah untuk mencari-cari sekolah swasta yang kebetulan bayarannya cukup mahal untuk kedua orang tua saya. 
+          SD saya di SDN SAWAH 02, SMP saya di SMPN 3 TANGERANG SELATAN, dan SMA saya di SMAN 4 TANGERANG SELATAN, serta saat ini saya sedang menempuh pendidikan di UIN Syarifhidayatullah Jakarta.
+        </p>
+
+        <a type="button" class="btn"  href="https://catatanartlibrary.blogspot.com/p/about.html" >Read More !</a>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      
+      <p>Copyright @2023<br>
+       Desain by Ardhya<br>
+      <a href="mailto: Rizzayyu30@gmail.com">Rizzayyu30@gmail.com</a></p>
+    </footer>
+
+
+  </body>
+
+</html>

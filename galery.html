@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RIZAYUU ARTLIBRARY ♡</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <script>
+    function animation(span) {
+     span.className = "turn";
+     setTimeout(function () {
+        span.className = ""
+     }, 700);
+  }
+  
+  function jam() {
+     setInterval(function () {
+  
+        var waktu = new Date();
+        var jam   = document.getElementById('jam');
+        var hours = waktu.getHours();
+        var minutes = waktu.getMinutes();
+        var seconds = waktu.getSeconds();
+  
+        if (waktu.getHours() < 10)
+        {
+           hours = '0' + waktu.getHours();
+        }
+        if (waktu.getMinutes() < 10)
+        {
+           minutes = '0' + waktu.getMinutes();
+        }
+        if (waktu.getSeconds() < 10)
+        {
+           seconds = '0' + waktu.getSeconds();
+        }
+        jam.innerHTML  = '<span>' + hours + '</span>'
+                       + '<span>' + minutes + '</span>'
+                       + '<span>' + seconds +'</span>';
+  
+        var spans      = jam.getElementsByTagName('span');
+        animation(spans[2]);
+        if (seconds == 0) animation(spans[1]);
+        if (minutes == 0 && seconds == 0) animation(spans[0]);
+  
+     }, 1000);
+  }
+  
+  jam();
+  
+      </script>
+
+  <body>
+	<div class="navmenu">
+    <div class="logo">
+      <button class="openbtn" onclick="openNav()"> ☰ </button>
+      
+      <nav><img src="logo.jpeg" alt="logo">
+      <a>RIZAYUU</a>
+    </nav>
+    </div>
+		<a href="index.html">Home</a>
+    <a href="about.html">About</a>
+		<a href="galery.html">Gallery</a>
+    <a href="Profile.html">Profile</a>
+		<div class="dropdown">
+      <button class="dropbtn">Contact Us</a></button>
+    <div class="dropdown-content">
+      <a href="https://instagram.com/wlndrizzkay_?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+      <a href="mailto: Rizzayyu30@gmail.com">Email</a>
+    </div>
+  </div>
+  </div>
+
+  <div id="mySidebar" class="sidebar">
+      <div class="jam-digital">
+      <h2>Widget Jam</h2>
+      <button class="closebtn" onclick="closeNav()">x</button>
+      <div id="jam"></div>
+  <hr  align="left" width="80%" color="black"/>
+  <h2>Statcounter</h2>
+  <!-- Statcounter code for Rizayuu ARTLibrary https://catatanartlibrary.blogspot.com/ on Blogger -->
+<script type="text/javascript">
+  //<![CDATA[
+  var sc_project=12926857; 
+  var sc_invisible=0; 
+  var sc_security="23afc923"; 
+  var scJsHost = "https://";
+  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter_xhtml.js'></"+"script>");
+  //]]>
+  </script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy - Statcounter" href="https://statcounter.com/" class="statcounter"><img class="statcounter" src="https://c.statcounter.com/12926857/0/23afc923/0/" alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade" /></a></div></noscript>
+  <!-- End of Statcounter Code -->
+  <a href="https://statcounter.com/p12926857/?guest=1"> View My Stats</a>
+    </div>
+
+    
+      </div>
+
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "200px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+
+    <main class="content">
+      <div class="container">
+        <div id="main">
+          
+        <h1>Gallery </h1>
+        <hr />
+        <h2>Rekomendasi Tempat Seru Yang Harus di Datangi Di Cikini</h2>
+        <h3>1. Taman Ismail Marzuki (TIM)</h3>
+        <img src="https://github.com/Rizkiayuwulandari/Statisweb/assets/144689610/fe27bf5a-4d54-499b-9ce1-d33aeb591a48" alt="img"/>
+        <h3>2. Perpustakaan Jakarta (TIM) di Cikini</h3>
+        <img src="https://github.com/Rizkiayuwulandari/Statisweb/assets/144689610/aa9718df-d463-4a01-abd5-fdfb9dd69713" alt="img"/>
+        <h3>3. Tempat Makan</h3>
+        <p><img src="https://github.com/Rizkiayuwulandari/Statisweb/assets/144689610/3935ff5a-853d-44ae-81f3-c3bfe07b8fa3" alt="img"/></p>
+        <p><img src="https://github.com/Rizkiayuwulandari/Statisweb/assets/144689610/c7cc66e1-e2d3-4026-8110-796781d9176c" alt="img"/></p>
+        <div class="image">
+          <p><img src="https://github.com/Rizkiayuwulandari/Statisweb/assets/144689610/767999f1-ac3c-45a6-961a-aed590b906f4" alt="img"/></p>
+        </div>
+        <p><img src="https://github.com/Rizkiayuwulandari/Statisweb/assets/144689610/73f1e1ff-66ba-44ec-b60d-f7e4ff974ac4" alt="img"/></p>        
+        <h3>4. Toko Barang Antik</h3>
+        <p><img src="https://github.com/Rizkiayuwulandari/Statisweb/assets/144689610/ee547c5b-5976-4956-8a3b-cad77e11bc5a" alt="img"/></p>
+        <h3>5. Roh Project</h3>
+        <p><img src="https://github.com/Rizkiayuwulandari/Statisweb/assets/144689610/1b40318d-d98c-4944-abaa-a8c287bb2217" alt="img"/></p>
+        <hr />
+
+        <h2>PAMERAN SENI DI JAKARTA NOVEMBER 2023</h2>
+        <h3>1. Pameran Seni Rupa "Indonesian Dream" di Menara Astra</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/1b5c9002-ccfa-46b4-ab42-c1b480d31340" alt="img"/>
+        <h3>2. Pameran Seni Art Jakarta</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/386f5dad-36d5-4b68-b61b-349b9b1dfad7" alt="img"/>
+        <h3>3. Pameran One Piece di Jakarta One Piece Exhibition Asia Tour</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/1bfb3d12-bf41-47e4-96f6-7d0571fad230" alt="img"/>
+        <h3>4. Pameran Lukisan 'Tanda Kasih' Sarat Sejarah dan Edukasi</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/1c6368ae-cff9-4aa4-ad7c-c7bca13874ab" alt="img"/>
+        <h3>5. Planetarium Mini di TIM</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/4d4ae759-2dbd-487b-bc84-d84ec47b0779" alt="img"/>
+
+        <p>Jika ingin melihat koleksi gambar-gambar yang lain silahkan klik tombol dibawah ini</p>
+        <p><a type="button" class="btn"  href="https://catatanartlibrary.blogspot.com/2023/11/pameran-seni-di-jakarta-november-2023.html" >Read More !</a></p>
+        <hr />
+
+        <h2>Tempat Self Healing Hits di Jakarta, Yang Harus Banget Kalian Kunjungi !!! </h2>
+        <h3>1. Skywalk Senayan Park</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/2b1611af-7f14-464e-a9ad-f8ef5a363bd7" alt="img"/>
+        <h3>2. Taman Suropati</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/5d03786d-42d2-4938-89e3-3804fb940376" alt="img"/>
+        <h3>3. Perpustakaan Nasional RI</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/202825d2-38bc-4176-9a72-1543e1ade3d4" alt="img"/>
+        <h3>4. Hutan Kota GBK</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/33e9f842-51c7-4c86-95b5-87804b931fab" alt="img"/>
+        <h3>5. M Bloc Space</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/067a366b-19bd-4d40-9fa6-cd3fb6fe59f9" alt="img"/>
+        <h3>6. Taman Langsat</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/679e0e59-b37f-4090-8a55-e5ac80985596" alt="img"/>
+        <h3>7. Taman Ismail Marzuki</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/25013b1f-4992-49ba-b01f-b1d204ba569a" alt="img"/>
+        <h3>8. Ganara Art Pottery</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/b99beba3-8514-47af-ab6a-7f81f6982139" alt="img"/>
+        <h3>9. Taman Impian Jaya Ancol</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/99bb485a-7866-4c23-877b-266acdfeacb5" alt="img"/>
+        <h3>10. Museum Of Jakarta</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/c80d8161-f910-47e5-a9b6-5fcfabcd2fde" alt="img"/>
+        <h3>11. Tebet Eco Park</h3>
+        <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/cdd5ebcf-02da-4a04-8874-26341c2e6848" alt="img"/>
+   
+
+      </div>
+      </div>
+      <footer>
+      
+        <p>Copyright @2023<br>
+         RIZKI AYU WULANDARI<br>
+        <a href="mailto: Rizzayyu30@gmail.com">Rizzayyu30@gmail.com</a></p>
+      </footer>
+  
+    </main>
+  
+  
+
+  </body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RIZAYUU ARTLIBRARY ♡</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <!-- js untuk widget jam -->
+  <script>
+    function animation(span) {
+     span.className = "turn";
+     setTimeout(function () {
+        span.className = ""
+     }, 700);
+  }
+  
+  function jam() {
+     setInterval(function () {
+  
+        var waktu = new Date();
+        var jam   = document.getElementById('jam');
+        var hours = waktu.getHours();
+        var minutes = waktu.getMinutes();
+        var seconds = waktu.getSeconds();
+  
+        if (waktu.getHours() < 10)
+        {
+           hours = '0' + waktu.getHours();
+        }
+        if (waktu.getMinutes() < 10)
+        {
+           minutes = '0' + waktu.getMinutes();
+        }
+        if (waktu.getSeconds() < 10)
+        {
+           seconds = '0' + waktu.getSeconds();
+        }
+        jam.innerHTML  = '<span>' + hours + '</span>'
+                       + '<span>' + minutes + '</span>'
+                       + '<span>' + seconds +'</span>';
+  
+        var spans      = jam.getElementsByTagName('span');
+        animation(spans[2]);
+        if (seconds == 0) animation(spans[1]);
+        if (minutes == 0 && seconds == 0) animation(spans[0]);
+  
+     }, 1000);
+  }
+  
+  jam();
+  
+      </script>
+
+  <body>
+	<div class="navmenu">
+    <div class="logo">
+      <!--tombol untuk membuka sidebar-->
+      <button class="openbtn" onclick="openNav()"> ☰ </button>
+      
+      <nav><img src="logo.jpeg" alt="logo">
+      <a>RIZAYUU</a>
+    </nav>
+    </div>
+    <!--navigasi menu-->
+		<a href="index.html">Home</a>
+    <a href="about.html">About</a>
+		<a href="galery.html">Gallery</a>
+    <a href="Profile.html">Profile</a>
+		<div class="dropdown">
+      <button class="dropbtn">Contact Us</a></button>
+    <div class="dropdown-content">
+      <a href="https://instagram.com/wlndrizzkay_?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+      <a href="mailto: Rizzayyu30@gmail.com">Email</a>
+    </div>
+  </div>
+  </div>
+
+  <div id="mySidebar" class="sidebar">
+      <div class="jam-digital">
+      <h2>Widget Jam</h2>
+      <button class="closebtn" onclick="closeNav()">x</button>
+      <div id="jam"></div>
+  <hr  align="left" width="80%" color="black"/>
+  <h2>Statcounter</h2>
+  <!-- Statcounter code for Rizayuu ARTLibrary https://catatanartlibrary.blogspot.com/ on Blogger -->
+<script type="text/javascript">
+  //<![CDATA[
+  var sc_project=12926857; 
+  var sc_invisible=0; 
+  var sc_security="23afc923"; 
+  var scJsHost = "https://";
+  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter_xhtml.js'></"+"script>");
+  //]]>
+  </script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy - Statcounter" href="https://statcounter.com/" class="statcounter"><img class="statcounter" src="https://c.statcounter.com/12926857/0/23afc923/0/" alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade" /></a></div></noscript>
+  <!-- End of Statcounter Code -->
+  <a href="https://statcounter.com/p12926857/?guest=1"> View My Stats</a>
+    </div>
+
+    
+      </div>
+<!-- js untuk membuka tutup sidebar-->
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "200px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+<!-- Konten Utama -->
+    <main class="content">
+      <div class="container">
+        <div id="main">
+          
+        <center><h1> Trevartlibs</h1></center>
+        <p>Pada halaman ini Trevartlibs akan membahas penjelasan singkat tentang tempat-tempat seru yang wajib kalian kunjungi.</p>
+        <p>1. Rekomendasi tempat seru yang harus didatangi di daerah Cikini</p>
+        <p>2. Pameran Seni di Jakarta November 2023</p>
+        <p>3. Tempat Self Healing di Jakarta</p>
+        <p> Nah tempat-tempat diatas yang akan kita bahas kali ini. Jika kalian ingin melihat penjelasan yang lebih lengkap, kalian bisa klik tombol readmore yang ada</p>
+        <hr />
+        <h2>Rekomendasi Tempat Seru Yang Harus di Datangi Di Cikini</h2>
+        <img src="https://github.com/Rizkiayuwulandari/Statisweb/assets/144689610/b4dd56ba-e474-4720-ac0e-91c5a545e28a" alt="img"/>
+        <p>Ada yang tau Cikini ? Yashh akhir-akhir ini cikini viral banget di berbagai platform media social salah satunya yang pasti kita semua punya yaitu Instagram dan Tiktok.
+          Di social media ku akhir-akhir ini sering sekali lewat FYP sebuah video yang membahas mengenai Cikini, baik itu tempat makannya, perpustakaan aesthetic yang viralnya, museumny dan yang lainnya. 
+          Oh iya ada satu lagi yang viral yaitu lagunya CIKINI KE GONDANGDIA. Pasti kalian semua pada tau kan? Hehe.</p>
+        <p>Ngebahas cikini, buat yang belum tau jadi cikini merupakan sebuah daerah yang terletak di Kecamatan Menteng, kota Jakarta Pusat, Provinsi DKI Jakarta. 
+          Penamaan Cikini ini sudah ada sejak zaman kolonial Belanda, namun saat itu ditulis dengan ejaan “ TJIKINI “, nah setelah masa kolonial ini berakhir barulah nama Tjikini ini berganti menjadi Cikini. 
+          Menurut sejarawan Asep Tjikini ini diambil dari dua kata yaitu Tji yang artinya sungai dan Kini yang berarti nama buah. Menurutnya buah kini dahulu tumbuh subur di wilayah Menteng yang merupakan bagian dari Cikini.
+           Menurut beliau saat orang belanda menetap disana pada saat itu, segala pepohonan tumbuh subur disana. Bahkan menjadi wilayah taman kota pertama pada masanya. Nah begitu sedikit ceritanya teman-teman. Jadi sudah pada tau kan sekarang kenapa daerah tersebut diberi nama Cikini.</p>
+          <h3>1. Taman Ismail Marzuki (TIM)</h3>
+          <img src="https://github.com/Rizkiayuwulandari/Statisweb/assets/144689610/fe27bf5a-4d54-499b-9ce1-d33aeb591a48" alt="img"/>
+          <p>Tempat ini menjadi salah satu tempat yang aku rekomendasikan untuk kalian agar bisa dijadikan sebagai salah satu ide buat kalian semua yang kalau lagi liburan atau weekend suka bingung mau jalan-jalan, healing, nongkrong atau main kemana sama teman-temannya. 
+            Kenapa aku merekomendasikan tempat ini karena jika kalian kesana kalian bisa hanya sekedar jalan-jalan di sekitar taman, foto-foto di setiap sudut yang menarik, duduk santai buat baca buku di Perpustakaannya, 
+            melihat pameran seni, nongkrong dan ngobrol bareng teman untuk ngopi-ngopi di kopi kenangan yang ada di sana atau bahkan ke surga bukunya yaitu perpustakaannya, sehingga di sana kalian bisa kerja secara WFA maupun nugas secara tenang tanpa di ganggu dengan vibes yang beda dari sebelumnya karena tempat ini tu cozy, bikin berasa seperti di perpustakaan luar negeri serta suasananya tu adem dan nenang banget dijamin betah banget deh kalian.</p>
+            
+            <h3>2. Perpustakaan Jakarta (TIM) di Cikini</h3>
+            <img src="https://github.com/Rizkiayuwulandari/Statisweb/assets/144689610/aa9718df-d463-4a01-abd5-fdfb9dd69713" alt="img"/>
+            <p>Sekilas seperti yang sudah ada di pembahasan sebelumnya bahwa Perpustakaan ini termasuk bagian dari Taman Ismail Marzuki. 
+              Perpustakaan ini merupakan hasil revitalisasi dari perpustakaan Pusat Dokumentasi Sastra HB Jassin yang sudah berdiri sejak 30 Mei 1977 di kawasan TIM. 
+              Setelah dilakukan revitalisasi dan diresmikan, segala fasilitas yang berkaitan dengan layanan perpustakaan dan sistemnya telah dilakukan pembaharuan agar perpustakaan tersebut menjadi lebih baik karena tujuannya agar menjadi bagian dari pusat literasi di kota Jakarta sebagai salah satu rujukan sumber informasi berupa ilmu pengetahuan bagi masyarakat luas.</p>
+         <h4>Alamat:</h4>
+         <p>Taman Ismail Marzuki Jalan Cikini Raya Nomor 73, RT.8/RW.2, Cikini, Kecamatan Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta.</p>
+         <h4>Jam Operasional:</h4>
+         <p>Hari : Senin - Minggu</p>
+         <p>Jam : 09.00 WIB - 17.00 WIB ( Jumat-minggu tutup jam 20.00)</p>
+         <p>Jika ingin melihat tempat-tempat yang lainnya serta dengan penjelasan lebih lengkap silahkan klik readmore dibawah ini</p>
+         <p><a type="button" class="btn"  href="https://catatanartlibrary.blogspot.com/2023/10/rekomendasi-tempat-seru-di-cikini-yang.html" >Read More !</a></p>
+        
+        <hr />
+        <h2>PAMERAN SENI DI JAKARTA NOVEMBER 2023</h2>
+         <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/047b501e-ddfc-4e08-9842-d413ea5f542b" alt="img"/>
+        <p>Beragam pameran seni banyak digelar di Jakarta pada saat ini. 
+          Pameran tersebut Tidak hanya untuk memperkenalkan karya dan instalasi, pameran kali ini bisa menjadi destinasi wisata modern yang patut dikunjungi, lho. 
+          Berikut beberapa pameran seni di Jakarta 2023 yang bisa kamu kunjungi. Kalau mampir ke sana, jangan lupa untuk mengabadikan momenmu ya karena instalasi yang mereka tampilkan sangat menarik sekali. </p>
+        
+          <h3>1. Pameran Seni Rupa "Indonesian Dream" di Menara Astra</h3>
+          <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/1b5c9002-ccfa-46b4-ab42-c1b480d31340" alt="img"/>
+          <p>Pameran Seni Rupa "Indonesian Dream" di Menara Astra Tampilkan Karya 28 Seniman. 
+            Pameran seni rupa bertajuk "Indonesian Dream" dibuka di Galeri Astra, Menara Astra, Jakarta, Kamis (2/11/2023). 
+            Pameran tersebut terselenggara hasil kolaborasi Astra dengan Kompas Gramedia melalui Galeri Astra dan Bentara Budaya.</p>
+            <p><b>Lokasi:</b> Galeri Astra, Menara Astra Jakarta</p>
+          <h3>2. Pameran Seni Art Jakarta</h3>
+          <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/386f5dad-36d5-4b68-b61b-349b9b1dfad7" alt="img"/>
+          <p>Wisata Akhir Pekan di Pameran Seni Art Jakarta 2023 yang Digelar 17-19 November 2023. 
+            Gelaran pameran seni ke-13 kalinya “Art Jakarta 2023” resmi dibuka pada Jumat, 17 November 2023 dan berlangsung hingga hari Minggu, 19 November 2023 di Jakarta International Expo (JIEXPO) Kemayoran, Jakarta Pusat dengan menghadirkan ragam karya seni dari para seniman lokal dan internasional.</p>
+          <p><b>Lokasi:</b> JIExpo Kemayoran Jakarta</p>
+          <h3>3. Pameran One Piece di Jakarta One Piece Exhibition Asia Tour</h3>
+            <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/1bfb3d12-bf41-47e4-96f6-7d0571fad230" alt="img"/>
+          <p> Menjelajah Dunia Anime One Piece Dalam Pameran di Jakarta. 
+              Pencinta komik Jepang dan anime One Piece dapat mengeksplorasi dunia tempat Luffy dkk berpetualang dalam pameran The Great Era of Piracy yang digelar di Mall of Indonesia, Jakarta, mulai 8 November 2023 hingga 7 Januari 2024. 
+              Pengunjung bisa menjelajahi dunia bajak laut itu di area pameran seluas 2.600 meter persegi.</p>
+          <p><b>Lokasi:</b> Mall of Indonesia</p> 
+          <p>Jika ingin memlihat pameran seni yang lainnya dengan penjelasan yang lebih lengkap anda bisa nmengunjungi halaman dibawah ini dengan mengklik tombol readmore</p>
+          <p><a type="button" class="btn"  href="https://catatanartlibrary.blogspot.com/2023/11/pameran-seni-di-jakarta-november-2023.html" >Read More !</a></p>
+<hr />       
+        <h2>Tempat Self Healing Hits di Jakarta, Yang Harus Banget Kalian Kunjungi !!!</h2>
+        <p>Saat jenuh bekerja, Kuliah, Sekolah Dan banyak aktivitas lainnya di Jakarta, tentunya kamu butuh mengambil cuti sesaat atau memanfaatkan liburanmu untuk mengunjungi beberapa tempat self healing ini, nih. </p>
+        <p>Tempat-tempat ini tak hanya bisa membuatmu merasa lebih baik, tetapi juga bisa jadi sumber inspirasi, lho. Tenang, rekomendasi Glints cukup lengkap, mulai dari yang bernuansa alam hingga tempat lainnya yang unik-unik.</p>
+        <p>Yuk, cek 11 tempat yang isa kalian datangi untuk healing</p>
+          <h3>1. Skywalk Senayan Park</h3>
+          <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/2b1611af-7f14-464e-a9ad-f8ef5a363bd7" alt="img"/>
+          <p> Ingin bersantai dan menikmati pemandangan kota Jakarta dari tempat tinggi? Yuk, coba ke Skywalk Senayan Park. Dari tempat ini,
+                kamu bisa memandangi megahnya gedung-gedung pencakar langit di ibu kota dan kerlap-kerlip lampu saat langit mulai gelap.</p>
+          <p>Jadi, disarankan untuk ke sini mulai sore hari hingga malam, ya.Skywalk memang baru buka mulai 15.00, dan direkomendasikan untuk ke sini pukul 17.00 ke atas.
+                Untuk mengakses Skywalk Senayan Park, kamu harus terlebih dahulu masuk ke Mall Senayan Park di seberang Gelora Bung  Karno (GBK). Lokasi ini terletak tepat di Jakarta Pusat.</p>
+          <p><b>Alamat:</b> Jl. Gerbang Pemuda No.3, Gelora, Kecamatan Tanah Abang, Kota Jakarta Pusat, DKI Jakarta.</p>
+          <p><b>Jam Operasional: </b>Setiap hari, Pukul 15.00-21.00 WIB</p>
+          <p><b>Harga Tiket Masuk: </b>Gratis untuk Skywalk Level 1 dan Untuk ke Skywalk Level 2 cukup tunjukkan struk belanja minimal Rp50.000</p>
+          <h3>2. Taman Suropati</h3>
+          <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/5d03786d-42d2-4938-89e3-3804fb940376" alt="img"/>
+          <p>Taman Suropati adalah tempat di Jakarta yang cocok untuk self healing karena suasananya yang tenang dan teduh. 
+                 Bukan taman biasa, taman Suropati dikenal sebagai titik nol RI.
+                 Di taman ini, ada banyak aktivitas yang bisa kamu lakukan, mulai dari bersantai, menikmati musik, berolahraga, dan masih banyak lagi. Kamu bisa mengunjungi taman Suropati di Menteng, Jakarta Pusat.</p>
+          <h3>3. Perpustakaan Nasional RI</h3>
+          <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/202825d2-38bc-4176-9a72-1543e1ade3d4" alt="img"/>
+          <p> Untukmu yang gemar membaca, tentu pergi ke perpustakaan bisa jadi salah satu pilihan. 
+              Di Jakarta, ada satu perpustakaan yang sangat cocok untuk self healing, yaitu Perpustakaan Nasional RI.
+              Tidak hanya lengkap dengan buku-buku, Perpusnas juga punya fasilitas-fasilitas yang semakin membuatmu nyaman. </p>
+          <p> Di sini, kamu bisa mengerjakan tugas, bersantai, dan bahkan menikmati makanan di kantinnya juga, lho. 
+              Dari lounge lantai 24, kamu juga dapat memandangi lanskap Jakarta dan simbol ibu kota, yaitu Monas. 
+              Perpustakaan Nasional RI juga terletak di Jakarta Pusat, tepatnya di daerah Gambir.</p>
+          <p><b>Alamat: </b>Jl. Medan Merdeka Selatan No.11, Jakarta 10110. </p>
+          <h3>4. Hutan Kota GBK</h3>
+          <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/33e9f842-51c7-4c86-95b5-87804b931fab" alt="img"/>
+          <p>Rekomendasi tempat self healing di Jakarta selanjutnya adalah Hutan Kota GBK. 
+             Tempat ini cocok buat kamu yang ingin menikmati suasana alam tapi tetap bisa menikmati pemandangan gedung pencakar langit. 
+             Ruang terbuka hijau yang satu ini sering dijadikan pilihan oleh warga Jakarta untuk piknik, kulineran, atau sekadar jalan-jalan santai. 
+             Tidak ada harga tiket yang dikenakan pada pengunjung yang ingin healing di Hutan Kota GBK ini.</p>
+          <p><b>Alamat: </b>Pintu Tujuh Senayan, Jl. Jenderal Sudirman, RT.1/RW.3, Gelora, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10270</p>
+          <p><b>Jam Operasional: </b>Senin tutup, Selasa - Minggu : 06.00–10.00, 15.00–18.00</p>
+          <h3>5. M Bloc Space</h3>
+          <img src="https://github.com/Rizkiayuwulandari/RizkiAyuWulandari_Webstatis/assets/144689610/067a366b-19bd-4d40-9fa6-cd3fb6fe59f9" alt="img"/>
+          <p>Tempat self healing di Jakarta selanjutnya adalah M Bloc Space. 
+             Anak muda Jakarta pasti sudah tidak asing lagi dengan tempat ini. 
+             M Bloc Space memang dikenal sebagai tempat untuk menghabiskan waktu beramai-ramai bersama teman, sahabat, atau pasangan. 
+             Jangan salah, tempat ini juga sangat cocok dijadikan sebagai destinasi self healing, terutama bagi kamu yang senang berada di suasana ramai sebagai cara untuk mengembalikan energi. 
+             Selain berfungsi sebagai ruang kreatif, M Bloc Space juga menghadirkan banyak sekali tempat makan hingga pop cultrue hub yang unik dan menarik.</p>
+             <p><b>Alamat: </b> Jl. Panglima Polim No.37, RT.1/RW.1, Melawai, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160</p>
+             <p><b>Jam Operasional: </b>Setiap hari, Pukul 07.00-22.00 WIB</p>
+          <p>Jika ingin melihat penjelasan dari tempat healing yang lainnya anda bisa klik tombol readmore dibawah ini</p>
+          <p><a type="button" class="btn"  href="https://catatanartlibrary.blogspot.com/2023/11/tempat-self-healing-hits-di-jakarta.html" >Read More !</a></p>
+       
+        </div>
+      
+      </div>
+      <footer>
+        <p>Copyright @2023<br>
+        RIZKI AYU WULANDARI<br>
+       <a href="mailto: Rizzayyu30@gmail.com">Rizzayyu30@gmail.com</a></p>
+      </footer>
+    </main>
+  
+  <script>
+      feather.replace()
+  </script>
+
+  <script src="index.js"></script>
+
+  </body>
+  
+</html>

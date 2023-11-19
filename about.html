@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RIZAYUU ARTLIBRARY ♡</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <script>
+    function animation(span) {
+     span.className = "turn";
+     setTimeout(function () {
+        span.className = ""
+     }, 700);
+  }
+  
+  function jam() {
+     setInterval(function () {
+  
+        var waktu = new Date();
+        var jam   = document.getElementById('jam');
+        var hours = waktu.getHours();
+        var minutes = waktu.getMinutes();
+        var seconds = waktu.getSeconds();
+  
+        if (waktu.getHours() < 10)
+        {
+           hours = '0' + waktu.getHours();
+        }
+        if (waktu.getMinutes() < 10)
+        {
+           minutes = '0' + waktu.getMinutes();
+        }
+        if (waktu.getSeconds() < 10)
+        {
+           seconds = '0' + waktu.getSeconds();
+        }
+        jam.innerHTML  = '<span>' + hours + '</span>'
+                       + '<span>' + minutes + '</span>'
+                       + '<span>' + seconds +'</span>';
+  
+        var spans      = jam.getElementsByTagName('span');
+        animation(spans[2]);
+        if (seconds == 0) animation(spans[1]);
+        if (minutes == 0 && seconds == 0) animation(spans[0]);
+  
+     }, 1000);
+  }
+  
+  jam();
+  
+      </script>
+
+  <body>
+	<div class="navmenu">
+    <div class="logo">
+      <button class="openbtn" onclick="openNav()"> ☰ </button>
+      
+      <nav><img src="logo.jpeg" alt="logo">
+      <a>RIZAYUU</a>
+    </nav>
+    </div>
+		<a href="index.html">Home</a>
+    <a href="about.html">About</a>
+		<a href="galery.html">Gallery</a>
+    <a href="Profile.html">Profile</a>
+		<div class="dropdown">
+      <button class="dropbtn">Contact Us</a></button>
+    <div class="dropdown-content">
+      <a href="https://instagram.com/wlndrizzkay_?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+      <a href="mailto: Rizzayyu30@gmail.com">Email</a>
+    </div>
+  </div>
+  </div>
+
+  <div id="mySidebar" class="sidebar">
+      <div class="jam-digital">
+      <h2>Widget Jam</h2>
+      <button class="closebtn" onclick="closeNav()">x</button>
+      <div id="jam"></div>
+  <hr  align="left" width="80%" color="black"/>
+  <h2>Statcounter</h2>
+  <!-- Statcounter code for Rizayuu ARTLibrary https://catatanartlibrary.blogspot.com/ on Blogger -->
+<script type="text/javascript">
+  //<![CDATA[
+  var sc_project=12926857; 
+  var sc_invisible=0; 
+  var sc_security="23afc923"; 
+  var scJsHost = "https://";
+  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter_xhtml.js'></"+"script>");
+  //]]>
+  </script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy - Statcounter" href="https://statcounter.com/" class="statcounter"><img class="statcounter" src="https://c.statcounter.com/12926857/0/23afc923/0/" alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade" /></a></div></noscript>
+  <!-- End of Statcounter Code -->
+  <a href="https://statcounter.com/p12926857/?guest=1"> View My Stats</a>
+    </div>
+
+    
+      </div>
+
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "200px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+
+    <main class="content">
+      <div class="container">
+        <div id="main">
+          
+        <h1>About </h1>
+        
+        <hr />
+        <h2>Sejarah Singkat Blog Rizayuu ARTLibrary</h2>
+        <p> Semua ini bermula dari saya yang mendapatkan tugas matakuliah Digital Library untuk membuat sebuah Blog, akhirnya saya coba untuk melakukan riset terkait bagaimana membuat Blog, Bagaimana mengakses dan diaksesnya sebuah Blog, dan yang lain-lainnya yang berkaitan dengan Blog. 
+          Setelah saya melakukan research tersebut, selanjutnya saya dibuat pusing dengan topik apa yang akan saya pakai. 
+        </p>
+        <p> Setelah itu saya mencoba untuk mulai mengerjakan tugas tersebut dengan memikirkan topik apa yang akan saya bahas di dalam Blog yang akan buat, 
+          dengan lamanya berfikir akhirnya saya memiliki ide dengan memanfaatkan hobi saya yang suka jalan-jalan dan juga sering sekali visit ke dalam Museum dan juga Perpustakaan yang menurut saya bagus dan juga sedang viral dan terkenal akhir-akhir ini, tapi ketertarikan saya dengan Museum dan Perpustakaan tak hanya pada tempat terkait yang sedang viral saja.
+          Kemudian saya juga suka sekali dengan Seni karena di dalam Museum dan Perpustakaan terdapat seni juga di dalamnya contohnya seperti terdapat Pameran seni yang di tampilkan pada tempat tersebut. 
+          Sehingga menurut saya ini merupakan ide yang sangat bagus untuk mengembangkan Blog ini, karena yang ada imajinasi saya ini akan seru sekali bila saya mengembangkan Blog ini dengan adanya hobi yang saya suka dan saya beranggapan akan lebih mudah untuk mengembangkannya.
+        </p>
+        <h2>What the Rizayuu ARTLibrary ?</h2>
+        <p> Rizayuu ARTLibrary merupakan sebuah blog Indonesia yang membahas mengenai Perpustakaan dan Museum yang ada di indonesia beserta Art/Seni seperti pameran dan yang lainnya yang berhubungan dengan seni yang ada di dalam 2 tempat tersebut.
+           selanjutnya Art yang di bahas pada Blog ini juga lingkupnya meluas tidak hanya pada lingkup Perpustakaan dan Museum saja. selanjutnya, Rizayuu merupakan suatu identitas nama dari penulis Blog ini.
+        </p>
+        <h2>VISI & MISI</h2> 
+        <p><b>VISI</b></p>
+        <p>Menjadikan website ini sumber informasi yang informatif dan terpercaya di internet baik dari masa kini hingga masa depan nanti untuk membantu para pengguna internet dalam menentukan tempat healing dan info-info acara even menarik seputar seni, art dan umum. </p>
+        <p><b>MISI</b></p>
+        <p>1. Menciptakan konten berkualitas yang berguna bagi pengguna internet untuk membantu mereka menentukan tempat-tempat seru.</p>
+        <p>2. Menjadikan website ini menjadi website yang lebih bermanfaat dan mampu sebagai sarana saya dalam menuangkan ide tempat menari dari hasil pengalaman kunjungan saya</p>
+        <p>3. Memberikan rekomendasi tempat, pameran, even-even acara, art dan seputar perpustakaan yang menarik dengan review yang jujur. </p>
+        <p><b>TUJUAN </b></p>
+        <p>Tujuan dari membuat website ini adalah untuk mengurus dan membantu semua kebingungan kalian para pengguna internet mengenai renacana dalam mengisi waktu liburan dan waktu luang kalian ketika ingin melakukan healing, self healing atau refreshing sejenak seperti rekomendasi tempat-tempat yang seru, tenang, sedang viral dan masih banyak lagi.
+          Rekomendasi kali ini akan ke seputar tempat-tempat pameran, even-even acara, dan tempat-tempat hits yang bisa kalian kunjungi.</p>
+      </div>
+      </div>
+
+    </main>
+    <footer>
+      
+      <p>Copyright @2023<br>
+       RIZKI AYU WULANDARI<br>
+      <a href="mailto: Rizzayyu30@gmail.com">Rizzayyu30@gmail.com</a></p>
+    </footer>
+
+  
+  </body>
+
+</html>
